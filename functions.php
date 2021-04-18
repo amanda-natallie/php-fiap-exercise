@@ -33,6 +33,18 @@ if(isset($_POST)) {
                 echo "A string \"$findme\" não foi encontrada dentro da frase informada";
            }
             break;
+
+            case "str_pad":
+                $size = $_POST["params"][2];
+                $char = $_POST["params"][3];
+                $side = $_POST["params"][4];
+                return print_r(str_pad($text, $size, $char, (int)$side));
+                break;
+
+            case "str_repeat": 
+                $repeat = $_POST["params"][2];
+                return print_r(str_repeat($text, (int)$repeat));
+                break;
         
         default:
         return $function;

@@ -143,7 +143,7 @@
                                         </div>
                                         <div class="col-3">
 
-                                            <input type="text" name="str_pad" class="form-control invisible str_pad_input" id="str_pad_size" placeholder="Com este tamanho">
+                                            <input type="number" name="str_pad" class="form-control invisible str_pad_input" id="str_pad_size" placeholder="Com este tamanho">
                                         </div>
                                         <div class="col-3 m-0 p-0">
 
@@ -153,13 +153,15 @@
                                             <div class="form-group">
                                                 <select class="form-control invisible str_pad_input" name="" id="str_pad_side">
                                                     <option value="">onde?</option>
-                                                    <option value="STR_PAD_LEFT">na esquerda</option>
-                                                    <option value="STR_PAD_RIGHT">na direita</option>
-                                                    <option value="STR_PAD_BOTH">em ambos os lados</option>
+                                                    <option value="0">na esquerda</option>
+                                                    <option value="1">na direita</option>
+                                                    <option value="2">em ambos os lados</option>
                                                 </select>
                                             </div>
                                         </div>
-
+                                        <div class="col-12">
+                                            <small class="text-danger" id="str_pad_small" style="display: none;">você precisa preencher todos os campos para mostrar o resultado</small>
+                                        </div>   
                                     </div>
                                 </div>
                             </div>
@@ -182,7 +184,7 @@
                                             <input type="text" name="str_repeat" class="form-control invisible str_repeat_input" id="str_repeat_text" placeholder="Neste texto">
                                         </div>
                                         <div class="col-3">
-                                            <input type="text" name="str_repeat" class="form-control invisible str_repeat_input" id="str_repeat_repeat" placeholder="Repita-me">
+                                            <input type="number" name="str_repeat" class="form-control invisible str_repeat_input" id="str_repeat_repeat" placeholder="Repita-me">
                                         </div>
                                         <div class="col-12">
                                             <small class="text-danger" id="str_repeat_small" style="display: none;">você precisa preencher todos os campos para mostrar o resultado</small>
